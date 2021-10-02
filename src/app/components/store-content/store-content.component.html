@@ -1,0 +1,35 @@
+<div class="content">
+    <div class="info">
+        <div class="header">
+            <h1>{{warehouseActual?.warehouseName}}</h1>
+            <h4>{{warehouseActual?.address}}</h4>
+            <div class="draw-map" id="map">
+        
+            </div>
+        </div>
+        <div class="content">
+            <button mat-stroked-button color="primary" (click)="addCategory()"><mat-icon>add</mat-icon>Añadir Categoría </button>
+            <button mat-stroked-button color="primary"(click)="addProduct()"><mat-icon>add</mat-icon>Añadir Producto </button>
+        
+        </div>
+    </div>
+    <div class="categories">
+    <h3 style="color: #002b5c;font-weight: bold;">Categorias del almacen:</h3>
+    <mat-divider></mat-divider>
+    <h4></h4>
+    </div>
+
+
+</div>
+<mat-divider></mat-divider>
+<div style="display: flex; min-height: 300px">
+    <div class="createCategory" *ngIf="pressedCategory==true">
+        <app-category-form [pressedCategory]="true" [idStore]="idStore"></app-category-form>
+    </div>
+    <div class="createProduct"*ngIf="pressedProduct==true">
+        <app-product-form [allCategories]="allCategories" [idStore]="idStore"></app-product-form>
+    </div>
+</div>
+
+
+

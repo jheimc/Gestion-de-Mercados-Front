@@ -1,0 +1,44 @@
+.header{
+
+}
+.content{
+    text-align: center;
+    padding: 15px;
+    margin:15px
+}
+mat-stroked-button{
+    border-radius: 5px;
+    border-color: #0460ca ;
+    padding: 10px;
+}
+mat-icon{
+    color: #0460ca;
+}
+.content{
+    
+    width: 95%;
+    display: flex;
+}
+.info{
+    width: 70%;
+}
+.categories{
+    width: 30%;
+    border-radius: 5px;
+    border-color:#0460ca ;
+    border-width: 2px;
+    border-style: dashed;
+}
+.createCategory{
+    width: 50%;
+    border-radius: 5px;
+    
+    padding: 10px;
+}
+.createProduct{
+    width: 50%;
+    border-radius: 5px;
+    
+    padding: 10px;
+
+}
